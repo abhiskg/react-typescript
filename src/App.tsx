@@ -2,6 +2,7 @@ import "./App.css";
 import { Greet } from "./components/Greet";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
+import { Status } from "./components/Status";
 
 const nameList = [
   {
@@ -32,6 +33,7 @@ function App() {
       <PhoneNumber num={12345} />
       <Person names={allNames} employee={employee} />
       <PersonList nameList={nameList} />
+      <Status status="success" />
     </div>
   );
 }
