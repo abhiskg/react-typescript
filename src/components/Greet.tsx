@@ -1,8 +1,14 @@
 interface GreetProps {
   name: string;
+  nature: boolean;
 }
 
 export const Greet = (props: GreetProps) => {
-  const { name } = props;
-  return <div>Hello {name}, What's up?</div>;
+  const { name, nature } = props;
+  return (
+    <>
+      <div>Hello {name}, What's up?</div>
+      <div>You are {nature} in nature</div>
+    </>
+  );
 };
